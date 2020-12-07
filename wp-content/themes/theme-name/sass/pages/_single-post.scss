@@ -1,0 +1,16 @@
+.single-post {
+	.date-time {
+		color: #A8A8A8;
+		font-size: 10px;
+		line-height: 12px;
+		text-transform: uppercase;
+		.cat {
+			color: #1D1D1B;
+			font-family: $avenirMedium;
+			line-height: 18px;
+		}
+		.hypen {
+			color: #A8A8A8;
+		}
+	}
+}

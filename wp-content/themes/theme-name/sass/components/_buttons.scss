@@ -1,0 +1,53 @@
+// ==========================================================================
+//  Site Button Component
+//  ==========================================================================
+
+.btn {
+	padding: 3px 16px 2px;
+	@include font-rem(16px,22px);
+	line-height: 18px;
+	font-family: $avenirltstdBook;
+	border-width: 2px !important;
+	box-shadow: none !important;
+	text-transform: uppercase;
+	border-radius: 2px;
+	&.btn-store {
+		background-color: color(secondary,base);
+		color: #fff;
+		border-color: color(secondary,base);
+		&:hover {
+			color: color(secondary,base) !important;
+			background-color: #fff;
+			// border-color: #fff;
+			border-color: color(secondary,base);
+		}
+	}
+
+	&.btn-black {
+		background-color: #fff;
+		color: color(primary,base);
+		border-color: color(primary,base);
+		padding: 7px 27px 6px;
+		&:hover {
+			color: #fff;
+			background-color: color(primary,base);
+		}
+	}
+
+	&.btn-small {
+		padding: 7px 27px 6px;
+	}
+	&.btn-larger {
+		padding: 12px 27px 11px;
+	}
+}
+
+.woocommerce-Button {
+	padding-top: 11px;
+	padding-bottom: 12px;
+	&:hover  {
+		background-color: #fff;
+		border: 2px solid #424349;
+		color: #424349 !important;
+	}
+}

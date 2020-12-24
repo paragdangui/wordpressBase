@@ -150,39 +150,3 @@
     font-family: 'object-fit: cover; object-position: center;';
 }
 
-.img-circle {
-    border-radius: 50%;
-}
-
-
-@media (min-width: 1200px) {
-	// .no-gutters-xl {
-	//   margin-right: 0;
-	//   margin-left: 0;
-	// }
-
-	.no-gutters-xl > .col,
-	.no-gutters > [class*="col-"] {
-	  padding-right: 0;
-	  padding-left: 0;
-	}
-}
-
-
-@media (min-width: 768px) {
-	.pb-md-10, .py-md-10 {
-	    padding-bottom: 6rem!important;
-	}
-
-	.pt-md-10, .py-md-10 {
-	    padding-top: 6rem!important;
-	}
-	.pb-md-15, .py-md-15 {
-	    padding-bottom: 9rem!important;
-	}
-
-	.pt-md-15, .py-md-15 {
-	    padding-top: 9rem!important;
-	}
-}
-

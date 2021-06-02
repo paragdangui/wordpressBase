@@ -5,7 +5,7 @@
     </button>
   </div>
   <label>
-    <input type="search" class="search-field" placeholder="<?php esc_html_e('Search', 'prototyze') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_html_e('Search After...', 'prototyze') ?>" autofocus />
+    <input type="search" class="search-field" placeholder="<?php esc_html_e('Search', 'prototyze') ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php esc_html_e('Search After...', 'prototyze') ?>"/>
   </label>
 
 </form>

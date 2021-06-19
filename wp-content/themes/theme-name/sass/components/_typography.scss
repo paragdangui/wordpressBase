@@ -2,20 +2,21 @@
   Base Typography Styles
   ========================================================================== */
 
-
 /* ==========================================================================
    Base Type
    ========================================================================== */
-*{
+* {
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &:focus,
+  &:active,
+  &:hover {
     &::-moz-focus-inner {
       border: 0;
     }
-    &:focus,&:active,&:hover{
-      &::-moz-focus-inner {
-        border: 0;
-      }
-      outline: 0;
-    }
+    outline: 0;
+  }
 }
 
 html {
@@ -52,49 +53,69 @@ textarea {
 /* ==========================================================================
    Headings and paragraph
    ========================================================================== */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-style: normal;
   font-family: $baseHeadingFont;
   // @extend %baseSpacing;
 }
 
-h1, .h1 {
-  @include font-rem(20px);
+h1,
+.h1 {
+  @include font-rem(32px, 37px);
 }
 
-h2, .h2 {
-  @include font-rem(17px);
+h2,
+.h2 {
+  @include font-rem(24px, 27px);
 }
 
-h3, .h3 {
-  @include font-rem(14px);
+h3,
+.h3 {
+  @include font-rem(18.72px, 22px);
 }
 
-h4, .h4 {
-  @include font-rem(13px);
+h4,
+.h4 {
+  @include font-rem(13px, 18px);
 }
 
-h5, .h5 {
-  @include font-rem(12px);
+h5,
+.h5 {
+  @include font-rem(12px, 16px);
 }
 
-h6, .h6 {
-  @include font-rem(11px);
+h6,
+.h6 {
+  @include font-rem(11px, 12px);
 }
 
-
-h1,h2,h3,h4,h5,h6,p,a,span,li{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li {
   word-wrap: break-word;
   word-break: break-word;
 }
 
 a {
-  color: color(secondary,base);
+  color: color(secondary, base);
   transition: 0.3s;
   &:hover {
     color: inherit;
@@ -102,6 +123,6 @@ a {
   }
 }
 
-img{
+img {
   max-width: 100%;
 }

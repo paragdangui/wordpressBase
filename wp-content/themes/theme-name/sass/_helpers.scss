@@ -1,136 +1,125 @@
 // Helper classes
 
-
 // Primary/Secondary classes
 
-.text-primary{
-	color: color(primary,base) !important;
+.text-primary {
+	color: color(primary, base) !important;
 }
 
-.text-secondary{
-	color: color(secondary,base) !important;
+.text-secondary {
+	color: color(secondary, base) !important;
 }
 
-
-.color-white{
+.color-white {
 	color: color(cloud);
 }
 
-.text-theme{
+.text-theme {
 	color: color(theme-light);
 }
 
-.text-danger{
+.text-danger {
 	color: color(danger) !important;
 }
 
 // Shades of grey
 
-
-.secondary-font{
+.secondary-font {
 	font-family: $subHeadingFont;
 }
 
-.sub-font{
+.sub-font {
 	font-family: $subHeadingFont;
 }
-
-
-
 
 // Text decoration/none
 
-.text-underline{
+.text-underline {
 	text-decoration: underline;
 }
 
-.underline-none{
+.underline-none {
 	text-decoration: none;
-	&:hover{
+	&:hover {
 		text-decoration: none;
 	}
 }
 
-
-.radius{
+.radius {
 	border-radius: 5px !important;
 }
 
 // box-shadow gradient
 
-.box-shadow{
-	&-primary{
+.box-shadow {
+	&-primary {
 		box-shadow: 0 3px 39px rgba(0, 0, 0, 0.06);
 	}
-	&-secondary{
+	&-secondary {
 		box-shadow: 0 3px 39px rgba(0, 0, 0, 0.13);
 	}
 }
 
-
 // Font weight classes
 
-.font-weight{
-	&-light{
+.font-weight {
+	&-light {
 		font-weight: 300 !important;
 	}
-	&-regular{
+	&-regular {
 		font-weight: 400 !important;
 	}
-	&-medium{
+	&-medium {
 		font-weight: 500 !important;
 	}
-	&-semi-bold{
+	&-semi-bold {
 		font-weight: 600 !important;
 	}
-	&-bold{
+	&-bold {
 		font-weight: 700 !important;
 	}
 }
 
-.min-height{
+.min-height {
 	min-height: 100vh;
 }
 
-.no-border{
+.no-border {
 	border: 0 !important;
 }
 
 // Global helper classes
 
-
 // Pointer cursor
 
-.cursor-pointer{
+.cursor-pointer {
 	cursor: pointer;
 }
 
-
 // Ellipsis classes
 
-.ellipsis{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.ellipsis-2{
-	display: -webkit-box;
-    height: 43px;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-// Overflow class
-
-.overflow-hidden{
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	overflow: hidden;
 }
 
-.disabled{
+.ellipsis-2 {
+	display: -webkit-box;
+	height: 43px;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// Overflow class
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.disabled {
 	pointer-events: none;
 }
 
@@ -143,10 +132,21 @@
 }
 
 .picture-fit {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-    font-family: 'object-fit: cover; object-position: center;';
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	font-family: "object-fit: cover; object-position: center;";
 }
 
+.desktop-only {
+	@include bp(tablet-sm) {
+		display: none;
+	}
+}
+.tablet-only {
+	display: none;
+	@include bp(tablet-sm) {
+		display: block;
+	}
+}

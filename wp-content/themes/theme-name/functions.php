@@ -17,21 +17,8 @@ function ExternalFiles()
     // SCRIPTS
     wp_enqueue_script('bootstrap-4-js', "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js", array('jquery'), rand(1000, 50000), true);
     wp_enqueue_script('bootstrap-popper-js', "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", array('jquery'), rand(1000, 50000), true);
-    wp_enqueue_script('bootstrap-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js", array('jquery'), rand(1000, 50000), true);
+    // wp_enqueue_script('bootstrap-jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js", array('jquery'), rand(1000, 50000), true); // jquery is already included in wordpress setup
     wp_enqueue_script('theme-js-js', get_template_directory_uri() . "/js/theme_script.js", array('jquery'), rand(1000, 50000), true);
 }
 
 add_action('wp_enqueue_scripts', 'ExternalFiles');
-
-
-
-
-?>
-
-
-
-
-
-
-
-
